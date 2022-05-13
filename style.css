@@ -1,0 +1,48 @@
+/* ----------Common Styles---------- */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-family: 'Barlow', sans-serif;
+}
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ----------Main Page Layout & Colors---------- */
+
+.grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(1, fr);
+  grid-template-areas: "box-1"
+                      "box-2"
+                      "box-3"
+                      "box-4"
+                      "box-5";
+}
+
+
+/* ----------Footer---------- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
