@@ -22,6 +22,11 @@ p {
   padding: 0;
 }
 
+main .transform img,
+main .stand-out img {
+  width: 100%;
+}
+
 
 /* ----------Main Page Layout & Colors---------- */
 
