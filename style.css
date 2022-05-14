@@ -9,8 +9,9 @@ html { font-size: 62.5%; }
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   font-family: 'Barlow', sans-serif;
+  text-align: center;
 }
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif; */
@@ -22,15 +23,82 @@ p {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Fraunces', serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+header .hero,
+main section,
+footer {
+  padding: 3em;
+}
+
 main .transform img,
 main .stand-out img {
   width: 100%;
 }
 
 
-/* ----------Main Page Layout & Colors---------- */
 
-.grid {
+/* ----------Header---------- */
+
+header {
+  background: url(images/mobile/image-header.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(199, 95%, 62%);
+  position: fixed;
+  width: 100%;
+  padding: 2em;
+}
+.menu nav {
+  display: none;
+}
+.menu #hamMenu,
+.logo {
+  cursor: pointer;
+}
+
+.hero {
+  padding-top: 2em;
+}
+.hero h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1rem;
+  padding: 2em 0 1.5em 0;
+}
+.hero img {
+  padding-bottom: 4em;
+  cursor: pointer;
+  animation: bounce 1s linear infinite;
+}
+
+
+/* ----------Main Layout---------- */
+
+/* .main {
   display: grid;
   grid-auto-rows: 1fr;
   grid-template-columns: repeat(1, fr);
@@ -39,7 +107,7 @@ main .stand-out img {
                       "box-3"
                       "box-4"
                       "box-5";
-}
+} */
 
 
 /* ----------Footer---------- */
@@ -51,3 +119,16 @@ main .stand-out img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+/* ----------Keyframes---------- */
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(1em); }
+  65% { transform: translateY(2em); }
+  75% { transform: translateY(1em); }
+  100% { transform: translateY(0); }
+}
+
+/* ----------Media Queries---------- */
