@@ -4,7 +4,10 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { font-size: 62.5%; }
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -12,6 +15,7 @@ body {
   font-size: 1.8rem;
   font-family: 'Barlow', sans-serif;
   text-align: center;
+  position: relative;
 }
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif; */
@@ -28,7 +32,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
   font-family: 'Fraunces', serif;
 }
 
@@ -64,10 +69,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: hsl(199, 95%, 62%);
+  background:	hsl(200, 100%, 62%);
   position: fixed;
   width: 100%;
   padding: 2em;
+  z-index: 10;
 }
 .menu nav {
   display: none;
@@ -117,7 +123,33 @@ header {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(200, 64%, 31%);
+}
+
+
+/* ----------Back To Top---------- */
+
+.topBtn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 4em;
+  right: 2em;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+.topBtn-anim {
+  opacity: 1;
+  transform: translateX(0);
+}
+.fa-circle-up {
+  font-size: 5rem;
+  color: hsl(200, 100%, 62%);
+}
+.topBtn:hover {
+  opacity: .7;
 }
 
 
@@ -126,9 +158,10 @@ header {
 @keyframes bounce {
   0% { transform: translateY(0); }
   25% { transform: translateY(1em); }
-  65% { transform: translateY(2em); }
+  55% { transform: translateY(2em); }
   75% { transform: translateY(1em); }
   100% { transform: translateY(0); }
 }
+
 
 /* ----------Media Queries---------- */
