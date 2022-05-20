@@ -65,6 +65,9 @@ header {
   background-position: 50% 50%;
 }
 
+
+/* ----------Sticky Menu---------- */
+
 .menu {
   display: flex;
   align-items: center;
@@ -78,10 +81,96 @@ header {
 .menu nav {
   display: none;
 }
-.menu #hamMenu,
+.menu #ham-menu-btn,
 .logo {
   cursor: pointer;
 }
+
+
+/* ----------Hamburger Menu---------- */
+
+#ham-menu-btn {
+  background: hsl(200, 100%, 62%);
+  display: block;
+  outline: none;
+  border: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: all .25s;
+  position: relative;
+}
+.ham-menu-items {
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 2rem 1rem hsla(0, 0%, 0%, 0.195);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  padding: .5em 0;
+  margin-top: 5em;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  width: 50%;
+  visibility: hidden;
+  transform: translateY(.51em);
+  transform: translateX(15em);
+  transition: all 1s ease;
+}
+.ham-menu-items.unfold {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+/* js, poss make move left on click to unveil message: "nothing to see here..." */
+.ham-menu-items a {
+  color: hsl(200, 100%, 62%);
+  padding: 1em;
+  margin: 1em 0;
+  transition: all 1s ease;
+}
+.ham-menu-items a:hover {
+  color: hsl(7, 99%, 70%);
+  letter-spacing: 1rem;
+}
+
+.ham-top,
+.ham-mid,
+.ham-btm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: .2rem;
+  background: hsl(0, 0%, 100%);
+  transform: rotate(0);
+  transition: all .5s;
+}
+
+.ham-mid {
+  transform: translateY(7px);
+}
+.ham-btm {
+  transform: translateY(14px);
+}
+
+#ham-menu-btn.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+#ham-menu-btn.open .ham-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+#ham-menu-btn.open .ham-mid {
+  display: none;
+}
+#ham-menu-btn.open .ham-btm {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+
+/* ----------Hero---------- */
 
 .hero {
   padding-top: 2em;

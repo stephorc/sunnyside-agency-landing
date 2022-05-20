@@ -23,20 +23,32 @@
 </head>
 <body>
   <header>
-    <section class="menu">
-      <div class="logo">
-        <img src="images/logo.svg" alt="Sunnyside">
+    <section>
+      <div class="menu">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Sunnyside">
+        </div>
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <!-- make page or modal w/ form? -->
+            <button class="contact-btn">Contact</button>
+          </ul>
+        </nav>
+        <button id="ham-menu-btn">
+          <span class="ham-top"></span>
+          <span class="ham-mid"></span>
+          <span class="ham-btm"></span>
+        </button>
       </div>
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <!-- contact button, make page or modal w/ form? -->
-          <li>Contact</li>
-        </ul>
-      </nav>
-      <img src="images/icon-hamburger.svg" alt="Menu" id="hamMenu">
+      <div id="ham-menu-items" class="ham-menu-items">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
     </section>
     <section class="hero">
       <h1>We are creatives</h1>
@@ -53,7 +65,7 @@
           We are a full-service creative agency specializing in helping brands grow fast. 
           Engage your clients through compelling visuals that do most of the marketing for you.
         </p>
-        <a href="">Learn more</a>
+        <a href="#" class="learn-more">Learn more</a>
       </section>
     </article>
     <article class="stand-out">
@@ -63,7 +75,7 @@
         <p>
           Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
         </p>
-        <a href="">Learn more</a>
+        <a href="#" class="learn-more">Learn more</a>
       </section>
     </article>
     <article class="graphic-des">
@@ -119,13 +131,14 @@
 
   <footer>
     <div class="logo">
-      <img src="images/logo.svg" alt="" loading="lazy">
+      <img src="images/logo.svg" alt="Sunnyside" loading="lazy">
     </div>
     <nav>
       <ul>
         <li>About</li>
         <li>Services</li>
         <li>Projects</li>
+        <li>Contact</li>
       </ul>
     </nav>
     <div class="social-menu">
