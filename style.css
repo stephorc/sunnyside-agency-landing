@@ -17,37 +17,26 @@ body {
   text-align: center;
   position: relative;
 }
-/* font-family: 'Barlow', sans-serif;
-font-family: 'Fraunces', serif; */
 
-h1,
-h2,
-p {
+h1, h2, h3,
+h4, h5, h6,
+a {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+ul li,
 a {
-  font-family: 'Fraunces', serif;
-}
-
-ul li {
   list-style-type: none;
-}
-a {
   text-decoration: none;
 }
 
 header .hero,
 main section,
 footer {
-  padding: 3em;
+  padding: 2em;
 }
 
 main .transform img,
@@ -123,7 +112,7 @@ header {
   transform: translateX(0);
 }
 
-/* js, poss make move left on click to unveil message: "nothing to see here..." */
+/* js, poss make move left or pop-up onclick to unveil message: "nothing to see here..." */
 .ham-menu-items a {
   color: hsl(200, 100%, 62%);
   padding: 1em;
@@ -191,21 +180,76 @@ header {
 }
 
 
-/* ----------Main Layout---------- */
+/* ----------Main, overall---------- */
 
-/* .main {
-  display: grid;
-  grid-auto-rows: 1fr;
-  grid-template-columns: repeat(1, fr);
-  grid-template-areas: "box-1"
-                      "box-2"
-                      "box-3"
-                      "box-4"
-                      "box-5";
-} */
+main article {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section {
+  margin: 2em 0;
+}
+
+main h2,
+main h3 {
+  font-size: 3.5rem;
+}
+main p {
+  margin: 2em 0;
+}
+
+
+/* ----------Main, .transform & .stand-out---------- */
+
+.transform p,
+.stand-out p {
+  color: hsl(213, 9%, 39%);
+  line-height: 1.8em;
+  font-weight: 600;
+}
+
+.learn-more {
+  color: hsl(0, 0%, 0%);
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+.learn-more::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -.3em;
+  right: 0;
+  top: 1.2rem;
+  height: 0;
+  border-radius: .7rem;
+  width: 110%;
+}
+.transform .learn-more::before {
+  border: .7rem solid hsla(51, 100%, 49%, 0.44);
+}
+.stand-out .learn-more::before {
+  border: .7rem solid hsla(7, 99%, 70%, 0.44);
+}
+
+
+/* ----------Main, .graphic-des & .photography---------- */
+
+/* ----------Main, .testimonials---------- */
+
+/* ----------Main, .pics---------- */
+
+.pics img {
+  object-fit: cover;
+  width: 50%;
+}
 
 
 /* ----------Footer---------- */
+
+/* footer .logo
+nav
+.social-menu */
 
 .attribution {
   font-size: 11px;
