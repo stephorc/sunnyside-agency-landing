@@ -33,18 +33,6 @@ a {
   text-decoration: none;
 }
 
-header .hero,
-main section,
-footer {
-  padding: 2em;
-}
-
-main .transform img,
-main .stand-out img {
-  width: 100%;
-}
-
-
 
 /* ----------Header---------- */
 
@@ -91,19 +79,15 @@ header {
 .ham-menu-items {
   background: hsl(0, 0%, 100%);
   box-shadow: 0 2rem 1rem hsla(0, 0%, 0%, 0.195);
-  font-weight: bold;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-self: center;
   padding: .5em 0;
-  margin-top: 5em;
+  margin-top: 5.54em;
   position: fixed;
   right: 0;
   z-index: 10;
   width: 50%;
   visibility: hidden;
-  transform: translateY(.51em);
   transform: translateX(15em);
   transition: all 1s ease;
 }
@@ -112,11 +96,10 @@ header {
   transform: translateX(0);
 }
 
-/* js, poss make move left or pop-up onclick to unveil message: "nothing to see here..." */
+/* js, poss make move left or pop-up onclick to unveil message */
 .ham-menu-items a {
   color: hsl(200, 100%, 62%);
   padding: 1em;
-  margin: 1em 0;
   transition: all 1s ease;
 }
 .ham-menu-items a:hover {
@@ -161,20 +144,16 @@ header {
 
 /* ----------Hero---------- */
 
-.hero {
-  padding-top: 2em;
-}
 .hero h1 {
   color: hsl(0, 0%, 100%);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
-  text-transform: uppercase;
   text-rendering: optimizeLegibility;
-  letter-spacing: 1rem;
-  padding: 2em 0 1.5em 0;
+  letter-spacing: .2em;
+  padding: 3.5em 0 1em 0;
 }
 .hero img {
-  padding-bottom: 4em;
+  padding-bottom: 10em;
   cursor: pointer;
   animation: bounce 1s linear infinite;
 }
@@ -186,26 +165,38 @@ main article {
   display: flex;
   flex-wrap: wrap;
 }
-main section {
-  margin: 2em 0;
-}
 
-main h2,
-main h3 {
+main h2 {
   font-size: 3.5rem;
 }
+main h3 {
+  font-size: 3rem;
+}
 main p {
-  margin: 2em 0;
+  line-height: 1.7em;
+  font-weight: 600;
+  margin: 1.7em 0;
+}
+main a {
+  margin: 0 0 1.7em 0;
+}
+
+main section,
+footer {
+  padding: 2em 1.5em;
 }
 
 
 /* ----------Main, .transform & .stand-out---------- */
 
+.transform img,
+.stand-out img {
+  width: 100%;
+}
+
 .transform p,
 .stand-out p {
   color: hsl(213, 9%, 39%);
-  line-height: 1.8em;
-  font-weight: 600;
 }
 
 .learn-more {
@@ -218,24 +209,59 @@ main p {
   content: '';
   position: absolute;
   z-index: -1;
-  left: -.3em;
+  top: 1.3rem;
+  left: -.66em;
   right: 0;
-  top: 1.2rem;
   height: 0;
   border-radius: .7rem;
-  width: 110%;
+  width: 120%;
 }
 .transform .learn-more::before {
-  border: .7rem solid hsla(51, 100%, 49%, 0.44);
+  border: .7rem solid hsla(51, 100%, 49%, 0.33);
 }
 .stand-out .learn-more::before {
-  border: .7rem solid hsla(7, 99%, 70%, 0.44);
+  border: .7rem solid hsla(7, 99%, 70%, 0.33);
 }
 
 
 /* ----------Main, .graphic-des & .photography---------- */
 
+.graphic-des {
+  background: url(images/mobile/image-graphic-design.jpg) no-repeat;
+  background-size: cover;
+  color: hsl(167, 40%, 24%);
+}
+.graphic-des section {
+  padding-top: 23em;
+}
+.graphic-des p {
+  font-size: 1.5rem;
+}
+
+.photography {
+  background: url(images/mobile/image-photography.jpg);
+  background-size: cover;
+}
+.photography section {
+  padding-top: 23em;
+  color: hsl(198, 62%, 26%);
+}
+.photography p {
+  font-size: 1.5rem;
+}
+
+
 /* ----------Main, .testimonials---------- */
+
+.testimonials h4 {
+  width: 100%;
+  margin-top: 3em;
+}
+.testimonials img {
+  border-radius: 100%;
+  width: 20%;
+}
+
 
 /* ----------Main, .pics---------- */
 
@@ -252,7 +278,7 @@ nav
 .social-menu */
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
