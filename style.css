@@ -215,12 +215,18 @@ footer {
   height: 0;
   border-radius: .7rem;
   width: 120%;
+  opacity: .3;
+  transition: all .5s ease-in;
 }
 .transform .learn-more::before {
-  border: .7rem solid hsla(51, 100%, 49%, 0.33);
+  border: .7rem solid hsl(51, 100%, 49%);
 }
 .stand-out .learn-more::before {
-  border: .7rem solid hsla(7, 99%, 70%, 0.33);
+  border: .7rem solid hsl(7, 99%, 70%);
+}
+.transform:hover .learn-more::before,
+.stand-out:hover .learn-more::before {
+  opacity: 1;
 }
 
 
