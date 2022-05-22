@@ -32,6 +32,12 @@ ul li,
 a {
   list-style-type: none;
   text-decoration: none;
+  cursor: pointer;
+}
+
+/* double-check */
+a:visited {
+  color: hsl(198, 62%, 26%);
 }
 
 
@@ -60,7 +66,7 @@ header {
   display: none;
 }
 .menu #ham-menu-btn,
-.logo {
+.logo img {
   cursor: pointer;
 }
 
@@ -283,24 +289,67 @@ footer {
 
 /* ----------Main, .pics---------- */
 
+.pics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 .pics img {
-  object-fit: cover;
   width: 50%;
 }
 
 
 /* ----------Footer---------- */
 
-/* footer .logo
-nav
-.social-menu */
+footer {
+  /* hsl(173, 39%, 62%) */
+  background: hsl(173, 30%, 56%);
+  color: 	hsl(168, 45%, 32%);
+}
+
+footer .logo {
+  padding: 2em 0 1.5em 0;
+  align-items: center;
+  justify-content: center;
+}
+footer .logo img {
+  width: 40%;
+  filter: brightness(0) saturate(100%) invert(40%) sepia(12%)
+    saturate(1791%) hue-rotate(118deg) brightness(93%) contrast(92%);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+footer .social-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 3.5em 0 2em 0;
+}
+.social-menu img {
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.social-menu img:hover {
+  opacity: .6;
+}
 
 .attribution {
   font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(200, 64%, 31%);
+  color: hsl(168, 45%, 32%);
+  transition: all .5s ease;
+}
+.attribution a:hover {
+  text-decoration: underline;
+  opacity: .6;
 }
 
 
@@ -323,7 +372,7 @@ nav
 }
 .fa-circle-up {
   font-size: 5rem;
-  color: hsl(200, 100%, 62%);
+  color: hsl(168, 45%, 32%);
 }
 .topBtn:hover {
   opacity: .7;
@@ -342,3 +391,9 @@ nav
 
 
 /* ----------Media Queries---------- */
+
+@media (min-width: 768px) {
+  .pics img {
+    width: 100%;
+  }
+}
