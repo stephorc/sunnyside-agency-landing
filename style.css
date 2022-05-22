@@ -14,18 +14,19 @@ body {
   padding: 0;
   font-size: 1.8rem;
   font-family: 'Barlow', sans-serif;
+  text-rendering: optimizeLegibility;
   text-align: center;
   position: relative;
 }
 
 h1, h2, h3,
-h4, h5, h6,
-a {
+h4, h5, a {
   font-family: 'Fraunces', serif;
   font-weight: 900;
   margin: 0;
   padding: 0;
 }
+/* recheck font weights */
 
 ul li,
 a {
@@ -148,7 +149,6 @@ header {
   color: hsl(0, 0%, 100%);
   font-size: 4rem;
   font-weight: 900;
-  text-rendering: optimizeLegibility;
   letter-spacing: .2em;
   padding: 3.5em 0 1em 0;
 }
@@ -228,6 +228,7 @@ footer {
 .stand-out:hover .learn-more::before {
   opacity: 1;
 }
+/* poss fix 120% width'ed item to inline? */
 
 
 /* ----------Main, .graphic-des & .photography---------- */
@@ -259,13 +260,24 @@ footer {
 
 /* ----------Main, .testimonials---------- */
 
-.testimonials h4 {
+.testimonials .testimonials-heading {
+  color: hsl(210, 4%, 67%);
+  font-weight: 900;
+  letter-spacing: .2em;
+  margin: 3.8em 0 2em 0;
   width: 100%;
-  margin-top: 3em;
 }
+
 .testimonials img {
   border-radius: 100%;
   width: 20%;
+}
+.testimonials p {
+  color: hsl(213, 9%, 39%);
+}
+.testimonials h6 {
+  color: hsl(210, 4%, 67%);
+  margin-top: 1em;
 }
 
 
