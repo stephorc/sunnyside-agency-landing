@@ -35,8 +35,6 @@ a {
   cursor: pointer;
 }
 
-/* double-check,
-also site-specific highlighting? */
 /* a:visited {
   color: hsl(198, 62%, 26%);
 } */
@@ -60,15 +58,17 @@ header {
 
 /* ----------Sticky Menu---------- */
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar {
   background:	hsl(200, 100%, 62%);
   position: fixed;
   width: 100%;
   padding: 2em;
   z-index: 10;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .menu nav {
@@ -327,8 +327,11 @@ main img {
   flex-direction: row;
 }
 .pics img {
-  flex: 1 0 50%;
-  /* width: 100%; */
+  flex-basis: 50%;
+}
+
+.pic2 {
+  display: none;
 }
 
 
@@ -486,7 +489,6 @@ footer .social-menu {
     display: none;
   }
 
-  /* fix */
   .hero h1 {
     font-size: 5rem;
     padding: 5.5em 0 3em;
@@ -567,5 +569,31 @@ footer .social-menu {
   .pics img {
     flex: 1 0 25%;
     width: 25%;
+  }
+}
+
+@media (min-width: 1240px) {
+  .navbar {
+    width: 100%;
+  }
+  .menu,
+  .transform,
+  .stand-out,
+  .graphdes-photo,
+  .testimonials,
+  footer div,
+  footer nav {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1800px) {
+  .pics {
+    flex-wrap: nowrap;
+    width: 50%;
+  }
+  .pic2 {
+    display: flex;
   }
 }

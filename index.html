@@ -22,12 +22,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <section>
+      <!-- Navbar -->
+      <section class="navbar">
         <div class="menu">
+          <!-- eader Logo -->
           <div class="logo">
             <img src="images/logo.svg" alt="Sunnyside">
           </div>
+          <!-- Desktop Menu -->
           <nav>
             <ul>
               <li>About</li>
@@ -36,12 +40,14 @@
               <button class="contact-btn">CONTACT</button>
             </ul>
           </nav>
+          <!-- Mobile Menu Hamburger Button -->
           <button id="ham-menu-btn">
             <span class="ham-top"></span>
             <span class="ham-mid"></span>
             <span class="ham-btm"></span>
           </button>
         </div>
+        <!-- Mobile Menu -->
         <nav id="ham-menu-items" class="ham-menu-items">
           <ul>
             <li>About</li>
@@ -51,36 +57,50 @@
           </ul>
         </nav>
       </section>
+      <!-- Hero -->
       <section class="hero">
+        <!-- Hero Title -->
         <h1>WE ARE CREATIVES</h1>
-        <img src="images/icon-arrow-down.svg" alt="" onclick="toMain()">
+        <!-- Hero, Down Arrow -->
+        <img src="images/icon-arrow-down.svg" alt="Click here to go down to the first text section" onclick="toMain()">
       </section>
     </header>
 
+    <!-- Main -->
     <main>
+      <!-- Article One, Transform -->
       <article class="transform">
-        <img src="images/mobile/image-transform.jpg" alt="" loading="lazy">
+        <!-- Transform Img -->
+        <img src="images/mobile/image-transform.jpg" alt="Egg on a yellow background" loading="lazy">
+        <!-- Transform Text -->
         <section id="firstText">
           <h2>Transform your brand</h2>
           <p>
             We are a full-service creative agency specializing in helping brands grow fast. 
             Engage your clients through compelling visuals that do most of the marketing for you.
           </p>
+          <!-- Learn More Button -->
           <a href="#" class="learn-more">LEARN MORE</a>
         </section>
       </article>
+      <!-- Article Two, Stand-out -->
       <article class="stand-out">
-        <img src="images/mobile/image-stand-out.jpg" alt="" loading="lazy">
+        <!-- Stand-out Img -->
+        <img src="images/mobile/image-stand-out.jpg" alt="Pink long-stemmed cup over a pink background" loading="lazy">
+        <!-- Stand-out Text -->
         <section>
           <h2>Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
           </p>
+          <!-- Learn More Button -->
           <a href="#" class="learn-more">LEARN MORE</a>
         </section>
       </article>
+      <!-- Article Three, Graphdes-photo -->
       <article class="graphdes-photo">
         <section class="graphic-des">
+          <!-- Graphdes-photo Text One -->
           <div>
             <h3>Graphic Design</h3>
             <p>
@@ -89,6 +109,7 @@
           </div>
         </section>
         <section class="photography">
+          <!-- Graphdes-photo Text Two -->
           <div>
             <h3>Photography</h3>
             <p>
@@ -97,10 +118,13 @@
           </div>
         </section>
       </article>
+      <!-- Article Four, Testimonials -->
       <article class="testimonials">
+        <!-- Testimonials Heading Text -->
         <h4 class="testimonials-heading">CLIENT TESTIMONIALS</h4>
         <section>
-          <img src="images/image-emily.jpg" alt="" loading="lazy">
+          <!-- Testimonial One, Img -->
+          <img src="images/image-emily.jpg" alt="Emily R." loading="lazy">
           <p>
             We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
           </p>
@@ -108,7 +132,8 @@
           <h6>Marketing Director</h6>
         </section>
         <section>
-          <img src="images/image-thomas.jpg" alt="" loading="lazy">
+          <!-- Testimonial Two, Img -->
+          <img src="images/image-thomas.jpg" alt="Thomas S." loading="lazy">
           <p>
             Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
           </p>
@@ -116,7 +141,8 @@
           <h6>Chief Operating Officer</h6>
         </section>
         <section>
-          <img src="images/image-jennie.jpg" alt="" loading="lazy">
+          <!-- Testimonial Three, Img -->
+          <img src="images/image-jennie.jpg" alt="Jennie F." loading="lazy">
           <p>
             Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
           </p>
@@ -124,18 +150,26 @@
           <h6>Business Owner</h6>
         </section>
       </article>
+      <!-- Article Five, Pics -->
       <article class="pics">
-        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="" loading="lazy">
-        <img src="images/mobile/image-gallery-orange.jpg" alt="" loading="lazy">
-        <img src="images/mobile/image-gallery-cone.jpg" alt="" loading="lazy">
-        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="" loading="lazy">
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles under a faux sky of blue paint and cotton clouds on string" loading="lazy">
+        <img src="images/mobile/image-gallery-orange.jpg" alt="An orange slice on a plate atop an orange-colored backdrop" loading="lazy">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="A waffle-style ice cream cone over a blue background" loading="lazy">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="A pink background with artfully stacked sugar cubes in front of it" loading="lazy">
+        <img src="images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles under a faux sky of blue paint and cotton clouds on string" class="pic2" loading="lazy">
+        <img src="images/mobile/image-gallery-orange.jpg" alt="An orange slice on a plate atop an orange-colored backdrop" class="pic2" loading="lazy">
+        <img src="images/mobile/image-gallery-cone.jpg" alt="A waffle-style ice cream cone over a blue background" class="pic2" loading="lazy">
+        <img src="images/mobile/image-gallery-sugar-cubes.jpg" alt="A pink background with artfully stacked sugar cubes in front of it" class="pic2" loading="lazy">
       </article>
     </main>
 
+    <!-- Footer -->
     <footer>
+      <!-- Footer Logo -->
       <div class="logo">
         <img src="images/logo.svg" alt="Sunnyside" loading="lazy">
       </div>
+      <!-- Footer Menu -->
       <nav>
         <ul>
           <li>About</li>
@@ -143,15 +177,18 @@
           <li>Projects</li>
         </ul>
       </nav>
+      <!-- Footer Social Menu -->
       <div class="social-menu">
         <img src="images/icon-facebook.svg" alt="" loading="lazy">
         <img src="images/icon-instagram.svg" alt="" loading="lazy">
         <img src="images/icon-twitter.svg" alt="" loading="lazy">
         <img src="images/icon-pinterest.svg" alt="" loading="lazy">
       </div>
+      <!-- Footer Attribution -->
       <div class="attribution">
         <a href="https://github.com/stephorc/sunnyside-agency-landing-page" target="_blank">Steph O.</a> &copy; 2022, All Rights Reserved
       </div>
+      <!-- Back To Top Button -->
       <Button onclick="backToTop()" class="topBtn"><i class="fa-solid fa-circle-up"></i></Button>
     </footer>
 
