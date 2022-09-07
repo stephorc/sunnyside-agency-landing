@@ -4,15 +4,14 @@
 
 This is my solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
-<!-- <p align="center">
+<p>
   <img
-    align="top"
+    align="center"
     src="design/sunnyside-agency-landing-page.png"
-    alt="sunnyside desktop view preview - top half"
+    alt="sunnyside desktop view preview"
     width="50%"
   />
-</p> -->
+</p>
 
 ## The challenge
 

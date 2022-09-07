@@ -227,7 +227,12 @@ footer {
 main section,
 main img {
   width: 100%;
-  /* flex-basis: 0; */
+}
+
+.transform section,
+.stand-out section,
+.testimonials section {
+  padding: 10em;
 }
 
 
